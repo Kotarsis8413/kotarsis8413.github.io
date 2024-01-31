@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Формулы</title>
+    <link rel="stylesheet" href="../mobile.css">
+    <script src="../../app.js"></script>
+    <script src="../nav.js"></script>
+</head>
+<body>
+    <header>
+        <select id="nav">
+            <option value="main">Главная страница</option>
+            <option value="formuls">Формулы</option>
+        </select>
+        <button onclick="gt(); return false;">Перейти</button>
+    </header>
+    <main>
+        <h1>Формулы</h1><br>
+        <div id="output" class="block"></div>
+        <p>
+            <select id="formula"><option value="false" disabled selected>Выберете формулу</option><option value="S">Площадь (S)</option><option value="Fupr">Fупр</option><option value="Ftyazh">Fтяж</option><option value="P">Вес (P)</option><option value="dav">Давление (p)</option><option value="davJD">Давление жидкости (p)</option></select>
+        </p>
+        <p>
+            <select id="g"><option value="false" disabled selected>Число g равно</option><option value="9.8">9.8Н</option><option value="10">10Н</option></select>
+        </p>
+        <p>Параметр 1:<input type="number" id="first">(длинна, масса, сила, плотность, жёсткость)</p>
+        <p>Параметр 2:<input type="number" id="second">(ширина, площадь, высота сосуда, деформация)</p>
+        <button onclick="go(); return false;">Посчитать</button>
+    </main>
+    <footer>
+        By MeeevoGroup for <a href="https://t.me/kotarsis8413">him</a> with ♥
+    </footer>
+</body>
+</html>
