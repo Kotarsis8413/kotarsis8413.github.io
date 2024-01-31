@@ -35,6 +35,14 @@ input {
     color: green;
 }
 
+textarea {
+    background-color: rgb(26, 26, 26);
+    border-color: rgb(26, 26, 26);
+    font-size: 25px;
+    transition: 2s;
+    color: green;
+}
+
 a {
     color: rgb(26, 26, 26);
     font-size: 25px;
