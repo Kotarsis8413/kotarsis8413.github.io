@@ -140,8 +140,12 @@ main .block {
 .post {
     background-color: rgba(49, 49, 49, 0.388);
     border-color: rgba(172, 255, 47, 0.388);
+    border-style: solid;
     font-size: 25px;
     font-weight: bold;
+
+    position: absolute;
+    left: 100px;
     
     width: 550px;
     max-width: 550px;
