@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://kotarsis8413.github.io/physic/main.css">
+  <link rel="stylesheet" href="my.css">
+  <script src="app.js"></script>
+  <script src="https://kotarsis8413.github.io/nav.js"></script>
+  <title>Калькулятор коммисии</title>
+</head>
+<body>
+    <header id="header">
+      <a href="https://kotarsis8413.github.io"><button class="navbtn">Главная страница</button></a><a href="physic/formula"><button class="navbtn">Формулы для физики</button></a><a href="http://f0895978.xsph.ru/"><button class="navbtn">MeeevoChat</button></a><a href="http://f0895978.xsph.ru/wall"><button class="navbtn">MeeevoWall</button></a><a href="http://f0895978.xsph.ru/questions/"><button class="navbtn">MeeevoQuestion</button></button></a><a href="https://kotarsis8413.github.io/commiscalc"><button class="navbtn">Калькулятор коммисии</button></button></a>
+    </header>
+    <main>
+      <p>
+        <input type="number" id="summ">
+        <button onclick="calculate(); return false;">Посчитать коммисию</button>
+      </p>
+      <p>
+        <select name="" id="service">
+          <option value="mts">МТС (телефон)</option>
+          <option value="ym">Юmoney (оператор)</option>
+        </select>
+      </p>
+      <p>
+        <span class="out" id="none">Тут просто сколько вы заплатите</span>
+        <span class="out" id="commis">Тут будет коммисия</span>
+        <span class="out" id="total">Тут будет конечная стоимость</span>
+      </p>
+    </main>
+    <footer>
+      <p>doter_2282 (discord) - frontend; komaru_the_cat (discord) - backend; for &copy;MeeevoGroup</p>
+    </footer>
+</body>
+</html>
