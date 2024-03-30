@@ -144,6 +144,11 @@ main .block {
     bottom: 80px;
     left: 750px;
 }
+.pmsgopen {
+    position: absolute;
+    bottom: 200px;
+    left: 750px;
+}
 
 .post {
     background-color: rgba(49, 49, 49, 0.388);
