@@ -20,11 +20,31 @@
     </header>
     <main>
         <div id="btnconnect"></div>
+        <button onclick="transaction(); return false;">Транзакция</button>
         <script>
             const tonConnectUI = new TON_CONNECT_UI.TonConnectUI({
                 manifestUrl: 'https://kotarsis8413.github.io/tonconnect-manifest.json',
                 buttonRootId: 'btnconnect'
             });
+
+            async function transaction() {
+                const transaction = {
+                    validUntil: Math.Round(Date.now() / 1000) + 10,
+                    messages: [
+                        {
+                            address: "0:0000000000000",
+                            amount: "100000"
+                        }
+                    ]
+                };
+
+                try {
+                    await tonConnectionUI.sendTransaction(transaction);
+                }
+                catch (e) {
+                    console.error(e);
+                }
+            }
         </script>
     </main>
     <footer>
