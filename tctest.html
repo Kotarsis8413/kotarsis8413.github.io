@@ -21,7 +21,6 @@
     <main>
         <div id="btnconnect"></div>
         <button onclick="transaction(); return false;">Транзакция</button> или <a href="ton://transfer/UQBppxG0G28kzuZ2ejytFqFVimfhUSvCeywZMv2LFWOVjgSK?amount=100000">отправить напрямую</a> <br>
-        <button onclick="check(); return false;">Проверить...</button>
         <script>
             const tonConnectUI = new TON_CONNECT_UI.TonConnectUI({
                 manifestUrl: 'https://kotarsis8413.github.io/tonconnect-manifest.json',
@@ -45,12 +44,6 @@
                 catch (e) {
                     console.error(e);
                 }
-            }
-
-            async function check() {
-                const connectedWallet = async tonConnectUI.connectWallet();
-
-                console.log(connectedWallet);
             }
         </script>
     </main>
